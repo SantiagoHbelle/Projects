@@ -1,0 +1,58 @@
+#include <iostream>
+
+using namespace std;
+int main() {
+
+    cout << "Welcome to Book Manager" << endl;
+    // ask the user to pick //
+    string newContact;
+    string numberContact;
+    string emailContact;
+    string listofContact;
+    int choice;
+
+    do {
+      cout << "1. Add Contacts  " << endl;
+      cout << "2. View Contacts " << endl;
+      cout << "3. Search Contacts " << endl;
+      cout << "4. Edit Contacts " << endl;
+      cout << "5. Delete Contacts " << endl;
+      cout << "6. Exit " << endl;
+      cout << "Enter your choice: ";
+      cin >> choice;
+
+
+      if (choice == 1) {
+          cout << "Name of New Contact: " << endl;
+          cin >> newContact;
+          cout << "Number of New Contact: " << endl;
+          cin >> numberContact;
+          cout << "Email of Contact: " << endl;
+          cin >> emailContact;
+          cout << "Contact Saved Successfully" << endl;
+          cout << "6. Menu " << endl;
+          cin >> choice;
+
+      }
+
+      if (choice == 2) {
+          cout << "List of the Contacts" << endl;
+          cout << "Contact Name:" << newContact << endl;
+          cout << "Contact Number:" << numberContact << endl;
+          cout << "Email Name:" << emailContact << endl;
+      }
+
+
+      if (choice == 6) {
+          string menu;
+          cout << "1. Add Contacts  " << endl;
+          cout << "2. View Contacts " << endl;
+          cout << "3. Search Contacts " << endl;
+          cout << "4. Edit Contacts " << endl;
+          cout << "5. Delete Contacts " << endl;
+          cout << "6. Exit " << endl;
+          cout << "Enter your choice: ";
+          cin >> choice;
+      }
+    } while (choice == 1);
+  }
