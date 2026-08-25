@@ -1,0 +1,51 @@
+#include <iostream>
+using namespace std;
+int main () {
+    cout << "=============================== " << endl;
+    cout << "Welcome to Starbucks Coffee!" << endl;
+    cout << "=============================== " << endl;
+    cout << "            MENU            " << endl;
+    cout << "Caffè Americano: 250 PHP " << endl;
+    cout << "Cappuccino: 200 PHP " << endl;
+    cout << "Caffe Mocha: 190 PHP " << endl;
+    cout << "Macha: 150 PHP " << endl;
+    cout << "Caramel: 170 PHP " << endl;
+    cout << "Tiramisu: 85 PHP " << endl;
+    cout << "Donut Pop: 35 PHP " << endl;
+    cout << "Water: 35 PHP " << endl;
+    cout << "Cookies: 55 PHP " << endl;
+
+
+
+    string customersName, orderName;
+    double priceName, orderQuantity;
+    cout << "Customers Name: " << endl;
+    cin >> customersName;
+    cout << "Order Name: " << endl;
+    cin >> orderName;
+    cout << "Price: " << endl;
+    cin >> priceName;
+    cout << "Quantity: " << endl;
+    cin >> orderQuantity;
+
+    cout << "=============================== " << endl;
+    cout << "            RECEIPT             " << endl;
+    cout << "=============================== " << endl;
+    cout << "" << endl;
+
+   double vat = 0.12;
+    double subtotal = priceName * orderQuantity;
+    double total = subtotal + vat;
+
+    cout << "Name: " << customersName << endl;
+    cout << "Price: " << priceName << endl;
+    cout << "Quantity: " << orderQuantity << endl;
+cout << "Subtotal:" << subtotal << endl;
+    cout << "Total:" << total << endl;
+
+
+
+
+
+
+}
