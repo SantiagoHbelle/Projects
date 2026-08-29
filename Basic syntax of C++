@@ -1,0 +1,162 @@
+#include <iostream>
+#include <bitset>
+
+using namespace std;
+int main() {
+    // sample code using constant //
+    cout << "CONST" << endl;
+    int radius = 20;
+    const double PI = 3.3872238;
+    float area = PI * (radius * radius );
+
+    cout << "Area is" << area << endl;
+
+                            // PRIMITIVE DATA TYPES: //
+        cout << "PRIMITIVE DATA TYPES" << endl;
+    // Int - Whole Numbers //
+    cout << "INT" << endl;
+    int age = 20;
+    cout << "Age is" << age << endl;
+
+    // Float: decimal numbers (single precision) //
+        cout << "FLOAT" << endl;
+    float grade = 89.5;
+    cout << "Grade is" << grade << endl;
+
+    // Double: Decimal Numbers (double precision, more accurate than float)
+        cout << "DOUBLE" << endl;
+    double pi = 3.3872238;
+    cout << "Pi is" << pi << endl;
+
+    // Char: single characters enclosed in single qoutes //
+        cout << "CHAR" << endl;
+    char name = 'A';
+    cout << "Name is" << name << endl;
+
+    // Bool: Boolean values: True or False //
+        cout << "BOOLEAN" << endl;
+    bool gayGender = false;
+    cout << "Is he gay?" << gayGender << endl;
+
+    // Void: Represent no Value //
+
+                        // ARITHMETIC OPERATIONS //
+        cout << "ARITHMETIC OPERATIONS" << endl;
+    int a = 1, b = 2;
+    cout << "The sum of the two numbers is " << a + b << endl;
+    cout << "The difference of the two numbers is " << a - b << endl;
+    cout << "The product of the two numbers is " << a * b << endl;
+    cout << "The qoutient of the two numbers is " << a / b << endl;
+    cout << "The remainder of the two numbers is " << a % b << endl;
+
+                        // COMPOUND ASSIGNMENT //
+        cout << "COMPOUND ASSIGNMENT" << endl;
+    int number;
+    number = 10;
+
+    double price = 99.5;
+
+    cout << "Number: " << number << endl;
+    cout << "Price: " << price << endl;
+
+    price = price + 10;
+    cout << "Price: " << price << endl;
+
+    price += 28;
+    cout << "Price: " << price << endl;
+
+                           // TYPE OF CONVERSION //
+    cout << "TYPE OF CONVERSION" << endl;
+    cout << "IMPLICIT CONVERSION/AUTOMATIC" << endl;
+    double d = 10.5;
+    int i = (int) d;
+    cout << "Double: " << d << endl;
+    cout << "After casting to int: " << i << endl;
+
+    cout << "EXPLICIT CONVERSION" << endl;
+    int num = 5;
+    double result = num / 2.0;
+
+    cout << "Number is1 " << result << endl;
+
+    double value = 9.99;
+    int truncated = (int) value;
+
+    cout << "Number is " << truncated << endl;
+
+                     // EXPRESSIONS //
+    cout << "ARITHMETIC EXPRESSIONS" << endl;
+    int amount = 200;
+    int tax = 20;
+    int total = amount + tax;
+    cout << "Total price is: " << total << endl;
+    cout << "RELATIONAL EXPRESSIONS:  X>Y" << endl;
+    cout << "LOGICAL EXPRESSIONS: X>0 && Y>0" << endl;
+
+                   // OPERATORS //
+    cout << "OPERATORS" << endl;
+    cout << "ARITHMETIC OPERATORS" << endl;
+
+    int z = 5, y = 10;
+    cout << "z + y = " << z + y << endl;
+    cout << "z - y = " << z - y << endl;
+    cout << "z * y = " << z * y << endl;
+    cout << "z / y = " << z / y << endl;
+    cout << "z % y = " << z % y << endl;
+
+    cout << "RELATIONAL OPERATORS" << endl;
+    cout << ( z == y ) << endl; // EQUAL TO? FALSE //
+    cout << ( z != y ) << endl; // NOT EQUAL TO? TRUE //
+    cout << ( z > y ) << endl; // GREATER THAN? FALSE //
+    cout << ( z <= y ) << endl; // LESS THAN or EQUAL TO? TRUE //
+
+    cout << "LOGICAL OPERATORS" << endl;
+    cout << (z > 0 && y > 0) << endl; // && (AND) (RULE: BOTH CONDITION MUST BE TRUE OR GREATER THAN IN THIS EXAMPLE) IS Z AND Y GREATER THAN ZERO? TRUE //
+    cout << (z > 0 || y < 0) << endl; // || (OR) (RULE: ATLEAST ONE CONDITION MUST BE TRUE IN THIS EXAMPLE) Z > 0 = TRUE Y < 0 = FALSE ANSWER: TRUE
+    cout << !(z > y) << endl; // ! (NOT) (FLIP THE ANSWER) Z IS NOT GREATER THAN Y: FALSE THEN FLIP --> TRUE
+
+
+            // BINARY LITERALS //
+    cout << "BINARY LITERALS" << endl;
+    int f = 0b1010;
+    int h = 0b1111;
+    cout << "f = " << f << endl;
+    cout << "h = " << h << endl;
+
+            // BINARY NUMBERS //
+    cout << "BINARY NUMBERS" << endl;
+    int binary = 23;
+    cout << "Decimal: " << binary << endl;
+    cout << "Binary: " << bitset<8>(binary) << endl;
+
+            // BITWISE OPERATORS //
+    cout << "BITWISE OPERATORS" << endl;
+    int g = 5;
+    int x = 3;
+
+    cout << "g & x: " << bitset<4>(g & x) << endl; // AND → both bits must be 1 //
+    cout << "g | x: " << bitset<4>(g | x) << endl; // OR → at least one bit is 1 //
+    cout << "g ^ x: " << bitset<4>(g ^ x) << endl; // XOR → bits must be different //
+    cout << "g >> x: " << bitset<4>(g >> x) << endl; // Right shift → move bits right (divide) //
+    cout << "g << x: " << bitset<4>(g << x) << endl; // Left shift → move bits left (multiply) //
+
+        // OPERATOR PRECEDENCE //
+    cout << "OPERATOR PRECEDENCE" << endl;
+    int l, q;
+    l = q = 5;
+    cout << "l & q: " << l << ", q: " << q << endl;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
