@@ -1,0 +1,71 @@
+#include <iostream>
+
+using namespace std;
+int main() {
+
+    // Beginning //
+    int playerChoice;
+    do {
+        cout << "               WELCOME!!!     " << endl;
+        cout << " This small game is created by the Developer: Berry Elly to "
+                "learn more about jump statements and manipulate flow of control.    " << endl;
+        cout << "=========================================" << endl;
+        cout << "          CAVE & RIVER ADVENTURE     " << endl;
+        cout << "=========================================" << endl;
+        cout << " CHOOSE OPTIONS     " << endl;
+        cout << "               1. Start Game    " << endl;
+        cout << "               2. Instructions  " << endl;
+        cout << "               3. Quit          " << endl;
+
+        cin >> playerChoice;
+
+        switch (playerChoice) {
+            case 1: {
+                int gameChoice;
+                cout << "=========================================================   " << endl;
+                cout << "SCENARIO: You are standing in a dark forest. There are two paths lie ahead" << endl;
+                cout << "==================   Choose Option  =====================" << endl;
+                cout << "               1. Go to the Cave    " << endl;
+                cout << "               2. Go to the River  " << endl;
+                cout << "               3. Quit          " << endl;
+
+                cin >> gameChoice;
+                switch (gameChoice) {
+                    case 1: {
+                        cout << "SCENARIO: You reached the mouth of the cave. Something growsl inside" << endl;
+                        cout << "1. Go to the monster to fight" << endl;
+                        cout << "2. Run back to the forest" << endl;
+                        int subChoice;
+                        cin >> subChoice;
+                        switch (subChoice) {
+                            case 1: {
+                                cout << "================================" << endl;
+                                cout << "        MONSTER FIGHT:          " << endl;
+                                cout << "================================" << endl;
+                                cout << "SCENARIO: A wild monster appears!!!" << endl;
+
+                                if (action == 1) {
+                                    cout << "             OPTIONS            " << endl;
+                                    cout << "  1. Attack: subtract damage from monster" << endl;
+                                    cout << "  2. Run Away: go back to the forest " << endl;
+                                }
+                                else if (action == 2) {
+                                    cout << "You ran back to the forest safely" << endl;
+                                    break;
+                                }
+                            }
+                            break;
+                        } // <-- closes subChoice switch
+                    }
+                    break;
+                    case 2: {
+                        cout << "2. Go back to the forest" << endl;
+                    }
+                    break;
+                } // <-- closes gameChoice switch
+            } // <-- closes case 1 block
+        } // <-- closes playerChoice switch
+    } while (playerChoice != 3); // <-- closes do-while loop
+
+    return 0;
+}
