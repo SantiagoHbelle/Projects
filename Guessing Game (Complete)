@@ -1,0 +1,138 @@
+#include <iostream>
+
+using namespace std;
+int main() {
+
+    // Beginning //
+    int playerChoice;
+
+    cout << "               WELCOME!!!     " << endl;
+    cout << " This small game is created by the Developer: Berry Elly to "
+            "learn more about jump statements and manipulate flow of control.    " << endl;
+    cout << "=========================================" << endl;
+    cout << "          CAVE & RIVER ADVENTURE     " << endl;
+    cout << "=========================================" << endl;
+    cout << " CHOOSE OPTIONS     " << endl;
+    cout << "               1. Start Game    " << endl;
+    cout << "               2. Instructions  " << endl;
+    cout << "               3. Quit          " << endl;
+
+    cin >> playerChoice;
+
+    switch (playerChoice) {
+        case 1: {
+            int gameChoice;
+            cout << "=========================================================   " << endl;
+            cout << "SCENARIO: You are standing in a dark forest. There are two paths lie ahead" << endl;
+            cout << "==================   Choose Option  =====================" << endl;
+            cout << "               1. Go to the Cave    " << endl;
+            cout << "               2. Go to the River  " << endl;
+            cout << "               3. Quit          " << endl;
+
+            cin >> gameChoice;
+            switch (gameChoice) {
+                case 1: {
+                    cout << "================================" << endl;
+                    cout << "        MONSTER FIGHT:          " << endl;
+                    cout << "================================" << endl;
+                    cout << "SCENARIO: You reached the mouth of the cave. Something growls inside" << endl;
+                    cout << "1. Go to the monster to fight" << endl;
+                    cout << "2. Run back to the forest" << endl;
+                    int subChoice;
+                    cin >> subChoice;
+                    switch (subChoice) {
+                        case 1: {
+                            cout << "1. You attack the monster and it eventually run away" << endl;
+                            break;
+                            case 2:
+                            cout << "2. Your back in the forest and hide" << endl;
+                            break;
+                        }
+                    }
+                }
+
+                case 2: {
+                    cout << "SCENARIO: You arrive at a wide river. A small village is visible on the far bank" << endl;
+                    cout << "1. Go to the village" << endl;
+                    cout << "2. Go to the forest" << endl;
+                    int riverChoice;
+                    cin >> riverChoice;
+                    switch (riverChoice) {
+                        case 1:
+                            cout << "1. WELCOME to the village. The villager looked at you and their leader greeted you warmly" << endl;
+                            break;
+                        case 2:
+                            cout << "2. You came back to the forest and had to stay the night in the cold" << endl;
+                            break;
+                    }
+                }
+
+                case 3: {
+                    cout << "==========================================" << endl;
+                    cout << "FINAL SCENE: THE MONSTER CAME BACK!!!" << endl;
+                    cout << "Choose the same number you chose earlier:" << endl;
+                    cout << "1. Go to the village " << endl;
+                    cout << "2. Go to the forest " << endl;
+
+                    int treasureChoice;
+                    cin >> treasureChoice;
+                    switch (treasureChoice) {
+                        case 1:
+                            cout << "1.The villagers helped you fight the monster and YOU WIN!!!" << endl;
+                            break;
+                        case 2:
+                            cout << "2. You fight the monster alone eventually you lose your strength." << endl;
+                            cout << "You run away eventually you tripped and hit your head on the rock" << endl;
+                            break;
+                    }
+                }
+                    case 4: {
+                        cout << "===========================================================================================" << endl;
+                        cout << "ENDING: AS THE ENDING SLOWLY FOLDED I AM HAPPY THAT YOU PARTICIPATED IN A SMALL GAME I MADE" << endl;
+                        cout << "===========================================================================================" << endl;
+                        cout << "Choose the same number you chose earlier:" << endl;
+                        cout << "1. go to the village" << endl;
+                        cout << "2. go to the forest" << endl;
+                        int endChoice;
+                        cin >> endChoice;
+                        switch (endChoice) {
+                            case 1:
+                                cout << "1. The villager welcomed you and it became your home and YOU LIVE HAPPILY EVER AFTER " << endl;
+                                break;
+                                case 2:
+                                cout << "2. YOU DIED WITH A BRAIN TUMOR: TRY THE GAME NEXT TIME" << endl;
+                                break;
+                        }
+                    }
+                    case 5: {
+                        cout << "===============================================" << endl;
+                        cout << "GAME RESULT: ARE YOU EXCITED TO SEE THE RESULT?" << endl;
+                        cout << "===============================================" << endl;
+                        cout << "Choose the same number you chose earlier:" << endl;
+                        cout << "1. Go to the village " << endl;
+                        cout << "2. Go to the forest " << endl;
+
+                        int resultChoice;
+                        cin >> resultChoice;
+                        switch (resultChoice) {
+                            case 1:
+                                cout << "================================================================================================" << endl;
+                                cout << "YOU WON! CONGRATULATIONS" << endl;
+                                cout << "Remember to always be brave in making decision even when its scary.  " << endl;
+                                cout << "Because Fear is only an imagination we believe in our mind because of uncertainty. - Berry Elly " << endl;
+                                cout << "SEE YOU NEXT TIME, BRAVE!" << endl;
+                                cout << "================================================================================================" << endl;
+                                break;
+                                case 2:
+                                cout << "YOU LOSE! i think you already know" << endl;
+                                cout << "Remember its better to die knowing you you faced your fears than die being scared and running away from fears - Berry Elly" << endl;
+                        }
+                    }
+
+
+            }
+        }
+    }
+
+    return 0;
+}
