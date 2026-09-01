@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+int main() {
+    cout << "HELLO WELCOME!!!" << endl;
+    cout << "=========================================================" << endl;
+    cout << "You will get this discount if you purchase this amount ;)" << endl;
+    cout << "=========================================================" << endl;
+    cout << "PURCHASE AMOUNT:                  DISCOUNT:              " << endl;
+    cout << "PHP5,000 and above                20%:              " << endl;
+    cout << "PHP3,000 - 4,999                  10%              " << endl;
+    cout << "PHP1,000 - 2,999                  5%:              " << endl;
+    cout << "Below 1,000                       NO DISCOUNT SADLY           " << endl;
+    cout << "=========================================================" << endl;
+
+
+    double price, discount;
+    cout << "Enter your amount purchase: ";
+    cin >> price;
+
+    if (price >= 5000) {
+        discount = 0.20;
+    } else if (price >= 3000 & price <= 4999) {
+        discount = 0.10;
+    } else if (price >= 1000 & price <= 2999) {
+        discount = 0.5;
+    } else if (price <= 1000) {
+        discount = 0;
+    }
+
+    double discountAmount = discount * price;
+    cout << "Discount Total: " << discount << endl;
+    double totalAmount = price - discountAmount;
+    cout << "Total Amount: " << totalAmount << endl;
+
+    cin.get();
+    return 0;
+
+}
