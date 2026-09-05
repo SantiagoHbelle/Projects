@@ -1,0 +1,220 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int arr [6] = {5, 12, 18, 27, 33, 41};
+    int choice = 0;
+    while (choice != 4) {
+        cout << "=================================================" << endl;
+        cout << "              LUCKY 6 LOTTERY SYSTEM             " << endl;
+        cout << "=================================================" << endl;
+        cout << "" << endl;
+        cout << "1. Check the lottery ticket "  << endl;
+        cout << "2. View Winning Numbers" << endl;
+        cout << "3. View Prize Rules" << endl;
+        cout << "4. Exit" << endl;
+        cin >> choice;
+        switch (choice) {
+            case 1:
+                cout << "1. Did you purchased a ticket? (Y/N) " << endl;
+                char pTicket;
+                cin >> pTicket;
+                if (pTicket == 'Y') {
+                    cout << "Ticket is Purchased you can participate" << endl;
+                    cout << "Write your 6 lottery numbers" << endl;
+                    int numbers [6];
+                    cout << "Number One: " << endl;
+                    cin >> numbers[0];
+                    cout << "Number Two: " << endl;
+                    cin >> numbers[1];
+                    cout << "Number Three: " << endl;
+                    cin >> numbers[2];
+                    cout << "Number Four: " << endl;
+                    cin >> numbers[3];
+                    cout << "Number Five: " << endl;
+                    cin >> numbers[4];
+                    cout << "Number Six: " << endl;
+                    cin >> numbers[5];
+
+
+                    // NUMBER 1 //
+                    int matches = 0;
+
+                    if ( numbers[0] < 1 || numbers[0] > 49 ) {
+                        cout << "Invalid Number!" << endl;
+                        cout<< "Lottery numbers must be between 1 and 49." << endl;
+                    }
+                    if ( numbers [0] == numbers [1] || numbers [0] == numbers [2] || numbers [0] == numbers [3] || numbers [0] == numbers [4] || numbers [0] == numbers [5]  ) {
+                        cout << "INVALID ENTRY" << endl;
+                        cout << "DUPLICATE NUMBERS ARE NOT ALLOWED" << endl;
+                    }
+                    if (numbers [0] == arr [0] ||  numbers [0] == arr [1] ||  numbers [0] == arr [2] || numbers [0] == arr [3] ||  numbers [0] == arr [4] ||   numbers [0] == arr [5]   ) {
+                        matches = matches + 1;
+                    }
+
+                    // NUMBER 2 //
+                    if ( numbers[1] < 1 || numbers[1] > 49 ) {
+                        cout << "Invalid Number!" << endl;
+                        cout<< "Lottery numbers must be between 1 and 49." << endl;
+                    }
+                    if ( numbers [1] == numbers [0] || numbers [1] == numbers [2] || numbers [1] == numbers [3] || numbers [1] == numbers [4] || numbers [1] == numbers [5]  ) {
+                        cout << "INVALID ENTRY" << endl;
+                        cout << "DUPLICATE NUMBERS ARE NOT ALLOWED" << endl;
+                    }
+                    if (numbers [1] == arr [0] ||  numbers [1] == arr [1] ||  numbers [1] == arr [2] || numbers [1] == arr [3] ||  numbers [1] == arr [4] ||   numbers [1] == arr [5]   ) {
+                        matches = matches + 1;
+                    }
+
+
+                    // NUMBER 3 //
+
+                    if ( numbers[2] < 1 || numbers[2] > 49 ) {
+                        cout << "Invalid Number!" << endl;
+                        cout<< "Lottery numbers must be between 1 and 49." << endl;
+                    }
+                    if ( numbers [2] == numbers [0] || numbers [2] == numbers [1] || numbers [2] == numbers [3] || numbers [2] == numbers [4] || numbers [2] == numbers [5]  ) {
+                        cout << "INVALID ENTRY" << endl;
+                        cout << "DUPLICATE NUMBERS ARE NOT ALLOWED" << endl;
+                    }
+                    if (numbers [2] == arr [0] ||  numbers [2] == arr [1] ||  numbers [2] == arr [2] || numbers [2] == arr [3] ||  numbers [2] == arr [4] ||   numbers [2] == arr [5]   ) {
+                        matches = matches + 1;
+                    }
+
+                    // NUMBER 4 //
+
+                    if ( numbers[3] < 1 || numbers[3] > 49 ) {
+                        cout << "Invalid Number!" << endl;
+                        cout<< "Lottery numbers must be between 1 and 49." << endl;
+                    }
+                    if ( numbers [3] == numbers [0] || numbers [3] == numbers [1] || numbers [3] == numbers [2] || numbers [3] == numbers [4] || numbers [3] == numbers [5]  ) {
+                        cout << "INVALID ENTRY" << endl;
+                        cout << "DUPLICATE NUMBERS ARE NOT ALLOWED" << endl;
+                    }
+                    if (numbers [3] == arr [0] ||  numbers [3] == arr [1] ||  numbers [3] == arr [2] || numbers [3] == arr [3] ||  numbers [3] == arr [4] ||   numbers [3] == arr [5]   ) {
+                        matches = matches + 1;
+                    }
+
+                    // NUMBER 5 //
+
+                    if ( numbers[4] < 1 || numbers[4] > 49 ) {
+                        cout << "Invalid Number!" << endl;
+                        cout<< "Lottery numbers must be between 1 and 49." << endl;
+                    }
+                    if ( numbers [4] == numbers [0] || numbers [4] == numbers [1] || numbers [4] == numbers [2] || numbers [4] == numbers [3] || numbers [4] == numbers [5]  ) {
+                        cout << "INVALID ENTRY" << endl;
+                        cout << "DUPLICATE NUMBERS ARE NOT ALLOWED" << endl;
+                    }
+                    if (numbers [4] == arr [0] ||  numbers [4] == arr [1] ||  numbers [4] == arr [2] || numbers [4] == arr [3] ||  numbers [4] == arr [4] ||   numbers [4] == arr [5]   ) {
+                        matches = matches + 1;
+                    }
+
+                    // NUMBER 6 //
+                    if ( numbers[5] < 1 || numbers[5] > 49 ) {
+                        cout << "Invalid Number!" << endl;
+                        cout<< "Lottery numbers must be between 1 and 49." << endl;
+                    }
+                    if ( numbers [5] == numbers [0] || numbers [5] == numbers [1] || numbers [5] == numbers [2] || numbers [5] == numbers [3] || numbers [5] == numbers [4]  ) {
+                        cout << "INVALID ENTRY" << endl;
+                        cout << "DUPLICATE NUMBERS ARE NOT ALLOWED" << endl;
+                    }
+
+                    if (numbers [5]== arr [0] ||  numbers [5] == arr [1] ||  numbers [5] == arr [2] || numbers [5] == arr [3] ||  numbers [5] == arr [4] ||   numbers [5] == arr [5]   ) {
+                        matches = matches + 1;}
+
+                    cout << "===============================================" << endl;
+                    cout << "                LOTTERY RESULTS                 " << endl;
+                    cout << "===============================================" << endl;
+                    cout << " " << endl;
+                    cout << " " << endl;
+                    cout << "Winning Numbers: 5   12   18   27   33   41    " << endl;
+                    cout << "Your Numbers:" <<  numbers[0] << " " " " << numbers[1] << " "  " " <<  numbers[2] << " "  " " <<  numbers[3] << " " " "   <<  numbers[4] << " "" " << numbers[5] << " "" " << endl;
+                    cout << " " << endl;
+                    cout << " " << endl;
+                    cout << "Matching Numbers:  " << matches << endl;
+                    cout << " " << endl;
+                    cout << " " << endl;
+
+
+
+
+
+
+
+                    if (matches == 6) {
+                        cout << "CONGRATULATIONS!" << endl;
+                        cout << "You Won JACKPOT" << endl;
+                    } else {
+                        if (matches == 5) {
+                            cout << "CONGRATULATIONS!" << endl;
+                            cout << "You Won PHP 100,000" << endl;
+                        } else {
+                            if (matches == 4) {
+                                cout << "CONGRATULATIONS!" << endl;
+                                cout << "You Won PHP 10,000" << endl;
+                            } else {
+                                if (matches == 3) {
+                                    cout << "CONGRATULATIONS!" << endl;
+                                    cout << "You Won PHP 1,000" << endl;
+                                } else {
+                                    if (matches == 2) {
+                                        cout << "CONGRATULATIONS!" << endl;
+                                        cout << "You Won PHP 100" << endl;
+                                    } else {
+                                        if (matches == 1) {
+                                            cout << "Sorry, you did not win a prize." << endl;
+                                            cout << "Better luck next time!" << endl;
+                                        } else {
+                                            cout << "NO MATCH" << endl;
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    cout << "===============================================" << endl;
+                }
+                else {
+                    cout << "Ticket is not Purchased" << endl;
+                }
+                break;
+
+
+            case 2: {
+                cout << "===============================================" << endl;
+                cout << "                 WINNING NUMBERS               " << endl;
+                cout << "===============================================" << endl;
+                cout << "   " << endl;
+                cout << " " << endl;
+                cout << "         5    12   18   27   33   41           " << endl;
+                cout << " " << endl;
+                cout << " " << endl;
+                cout << "===============================================" << endl;
+            }
+            break;
+            case 3: {
+                cout << "===============================================" << endl;
+                cout << "                PRIZE RULES                    " << endl;
+                cout << "===============================================" << endl;
+                cout << "   " << endl;
+                cout << "  6 Matches        -    JACKPOT                " << endl;
+                cout << "  5 Matches        -    PHP 100,000                 " << endl;
+                cout << "  4 Matches        -    PHP 10,000                " << endl;
+                cout << "  3 Matches        -    PHP 1,000                " << endl;
+                cout << "  2 Matches        -    PHP 100                " << endl;
+                cout << "  1 Matches        -    No Prize                " << endl;
+                cout << "  0 Matches        -    No Match                " << endl;
+            }
+            break;
+                case 4: {
+                    cout << "Thank you for using the Lucky 6 Lottery System!" << endl;
+                    cout << "Good luck!" << endl;
+                }
+                break;
+                default: {
+                    cout << "Invalid choice. Please select from 1 to 4." << endl;
+                }
+        }
+
+    }
+}
