@@ -1,0 +1,122 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int choice;
+    // while (choice) {} FOR LOOPING //
+    int numbers[4];
+    cout << "===============================================" << endl;
+    cout << "             WELCOME TO THE RESTAURANT         " << endl;
+    cout << "===============================================" << endl;
+    cout << "                     MENU                      " << endl;
+    cout << "1. Burger                    PHP 120              " << endl;
+    cout << "2. Pizza                     PHP 250              " << endl;
+    cout << "3. Pasta                     PHP 180              " << endl;
+    cout << "4. Fried Chicken             PHP 200              " << endl;
+    cout << "5. Exit                                        " << endl;
+    cout << "===============================================" << endl;
+
+    cin >> choice;
+
+        string item;
+    switch (choice) {
+        double priceNumber;
+        int quantityNumber;
+        case 1:
+            cout << "1. Burger                    PHP 120              " << endl;
+            cout << "Quantity: " << endl;
+            cin >> quantityNumber;
+
+        if (numbers [0]) {
+                item = "Burger";
+                priceNumber = 120;
+            }
+
+        cout << "=================================" << endl;
+        cout << "          ORDER RECEIPT          " << endl;
+        cout << "=================================" << endl;
+
+        cout << "Item: " << item  << endl;
+        cout << "Price:PHP " << priceNumber << endl;
+        cout << "Quantity: " << quantityNumber << endl;
+        cout <<"Total:PHP " << priceNumber * quantityNumber << endl;
+
+        break;
+
+        case 2:
+            cout << "2. Pizza                       PHP 250              " << endl;
+            cout << "Quantity: " << endl;
+            cin >> quantityNumber;
+        if (numbers [1]) {
+            item = "Pizza";
+            priceNumber = 250;
+           }
+        cout << "=================================" << endl;
+        cout << "          ORDER RECEIPT          " << endl;
+        cout << "=================================" << endl;
+
+        cout << "Item: " << item  << endl;
+        cout << "Price:PHP " << priceNumber << endl;
+        cout << "Quantity: " << quantityNumber << endl;
+        cout <<"Total:PHP " << priceNumber * quantityNumber << endl;
+        cout << "=================================" << endl;
+        cout << "             THANK YOU!          " << endl;
+        cout << "=================================" << endl;
+
+        break;
+
+        case 3:
+            cout << "3. Pasta                     PHP 180              " << endl;
+            cout << "Quantity: " << endl;
+            cin >> quantityNumber;
+        if (numbers [2]) {
+            item = "Pasta";
+            priceNumber = 180;
+        }
+        cout << "=================================" << endl;
+        cout << "          ORDER RECEIPT          " << endl;
+        cout << "=================================" << endl;
+
+        cout << "Item: " << item  << endl;
+        cout << "Price:PHP " << priceNumber << endl;
+        cout << "Quantity: " << quantityNumber << endl;
+        cout <<"Total:PHP " << priceNumber * quantityNumber << endl;
+        cout << "=================================" << endl;
+        cout << "             THANK YOU!          " << endl;
+        cout << "=================================" << endl;
+        break;
+
+        case 4:
+            cout << "4. Fried Chicken             PHP 200              " << endl;
+            cout << "Quantity: " << endl;
+            cin >> quantityNumber;
+        if (numbers [3]) {
+            item = "Fried Chicken";
+            priceNumber = 200;
+        }
+        cout << "=================================" << endl;
+        cout << "          ORDER RECEIPT          " << endl;
+        cout << "=================================" << endl;
+
+        cout << "Item: " << item  << endl;
+        cout << "Price:PHP " << priceNumber << endl;
+        cout << "Quantity: " << quantityNumber << endl;
+        cout <<"Total:PHP " << priceNumber * quantityNumber << endl;
+        cout << "=================================" << endl;
+        cout << "             THANK YOU!          " << endl;
+        cout << "=================================" << endl;
+        break;
+
+        case 5:
+            cout << "5. Exit " << endl;
+            {
+                cout << "Thank You Come Again!" << endl;
+            }
+        break;
+        default:
+        cout << "Invalid Choice" << endl;
+    }
+
+    // } //
+
+    return 0;
+}
